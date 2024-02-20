@@ -1,0 +1,126 @@
+/* CSS for navigation bar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* Center align items vertically */
+  }
+  .logo ul {
+    margin-left: 20px; /* Add margin between logo and links */
+    padding: 0;
+    list-style-type: none;
+  }
+  .logo ul li {
+    display: inline; /* Display links horizontally */
+    margin-right: 20px;
+  }
+  .logo ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Change link color */
+  }
+  /* Different style for Bulk Mail Sender */
+.logo {
+    color: yellow; /* Change color */
+  }   
+
+  .login-signup {
+    display: flex;
+    align-items: center;
+  }
+  .login-signup button {
+    margin-left: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+
+  ul li a:hover {
+    text-decoration: underline; /* Add underline on hover */                   
+  }   
+  
+  /* CSS for modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+    }
+    .nav-links li {
+      text-align: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #fff;
+    }
+    .nav-links li:last-child {
+      border-bottom: none;
+    }
+    #menu-toggle {
+      display: block;
+      font-size: 24px;
+    }
+    .login-signup {
+      display: none;
+    }
+  }
+
+
+  
+
+
+
+
+  
+  
+
+
+  
+  
