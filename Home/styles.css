@@ -99,8 +99,8 @@ body {
       text-align: center;
       padding: 10px 0;
       border-bottom: 1px solid #fff;
-    }
-    .nav-links li:last-child {
+    }     
+    .nav-links li:last-child {    
       border-bottom: none;
     }
     #menu-toggle {
